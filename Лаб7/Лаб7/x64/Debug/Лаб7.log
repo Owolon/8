@@ -1,4 +1,1 @@
-﻿  Решение.c
-C:\Users\ПК\source\repos\Лаб7\Лаб7\Решение.c(81,32): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
-C:\Users\ПК\source\repos\Лаб7\Лаб7\Решение.c(90,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-  Лаб7.vcxproj -> C:\Users\ПК\source\repos\Лаб7\x64\Debug\Лаб7.exe
+﻿  Лаб7.vcxproj -> C:\Users\ПК\source\repos\Лаб7\x64\Debug\Лаб7.exe

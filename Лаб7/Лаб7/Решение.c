@@ -5,6 +5,12 @@
 #define _USE_MATH_DEFINES 
 #define CRT_SECURE_NO_DEPRECATE
 //0
+double formula(double X, int w)
+{
+	double result;
+	result = abs(exp(w) - 2) - pow(X, 2);
+	return result;
+}
 int main()
 {
 	setlocale(LC_CTYPE, "RUS");
@@ -53,7 +59,7 @@ int main()
 //1A (подправить)
 	int M;
 
-	printf("\n¬ведите значение M:\n");
+	printf("\n¬ведите значение степени:\n");
 	scanf_s("%d", &M);
 	for (int i = 1;i<=M;i++)
 	{
@@ -67,19 +73,26 @@ int main()
 			}
 	}
 //2 (править)
-	int X;
-	int h;
+	double X;
+	double Xc;
+	double h;
 	int w = 1;
-	printf("\ny=|e^w-2|-x^2, где x = ");
-	scanf_s("%d", &X);
-	printf("\n¬ведите шаг табул€ции[1-3]:\n");
-	scanf_s("%d", &h);
+	double Y;
+	printf("\n‘ункци€ f(x) = |e^w - 2| - x^2\n");
+	printf("\n¬ведите начало интервала:\n");
+	scanf_s("%lf", &X);
+	printf("\n¬ведите конец интервала:\n");
+	scanf_s("%lf", &Xc);
+	printf("\n¬ведите шаг табул€ции:\n");
+	scanf_s("%lf", &h);
 
-	for (int i = X;i<=3; i+=h)
+	printf("______________\n");
+	for (double i = X;i <= Xc; i+=h)
 	{
-		printf("%d", X);
-		printf("\t%.lf\n", abs(exp(w)-2)-pow(X,2));
+		Y = formula(X, w);
+		printf("|%3.3lf|%3.3lf|\n", X,Y);
 	}
+	printf("--------------\n");
 //3
 	int Nv;
 	float q = 1;
