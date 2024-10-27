@@ -1,0 +1,4 @@
+﻿  Решение.c
+C:\Users\ПК\source\repos\Owolon\8\Лаб7\Лаб7\Решение.c(10,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ПК\source\repos\Owolon\8\Лаб7\Лаб7\Решение.c(104,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Лаб7.vcxproj -> C:\Users\ПК\source\repos\Owolon\8\Лаб7\x64\Debug\Лаб7.exe
